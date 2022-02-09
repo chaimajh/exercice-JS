@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Affichage du jour de la semaine</h1>
+
+<button onclick="datefn()" >jours de la semaine</button>
+
+
+<p id="demo"></p>
+
+<script>
+
+function datefn(){
+
+const d = new Date();
+let day = d.getDay()
+var heute
+if (day==1)
+{
+heute= "Lundi"
+
+}
+else if (day==2)
+{ 
+heute= "Mardi"
+}
+else if(day==3)
+{ 
+heute= "Mercredi"
+}
+else if (day==4)
+{ 
+heute= "Jeudi"
+}
+else if (day==5)
+{ 
+heute= "Vendredi"
+}
+else if (day==6)
+{ 
+heute= "Samedi"
+}
+else if (day==7)
+{ 
+heute= "Dimanche"
+}
+
+document.getElementById("demo").innerHTML = "On est "+heute;}
+</script>
+
+</body>
+</html>
